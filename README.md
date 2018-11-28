@@ -70,17 +70,11 @@ with the _CCTKPath_ variable like:
 CCTK\
 ``` 
 
-__Arguments__  
-Soon
-
-__Settings files__  
-Soon
-
 __Password list__  
-Soon
+Added Using list item BIOSPasswords (eg. BIOSPasswords001, BIOSPasswords002, etc)
 
 __New password__  
-Soon
+Added using variable NewBIOSPassword
 
 #Required files
 ZTIDellBIOSSettings requires the "ZTIUtility.vbs" file found in the MDT deployment share "script" folder (MDT) or at the same place in the MDT package (SCCM).  
@@ -115,7 +109,7 @@ soon
 
 # FAQ
 __What is CCTK?__  
->It stands for __Client Configuration Toolkit__, it is developed by Dell for their desktops and laptops.  
+>It stands for __Command | Configure Toolkit__, it is developed by Dell for their desktops and laptops.  
 It allows you to change BIOS/UEFI settings for Dell machines from within Windows(PE).  
 
 __Why not just use CCTK to generate an .exe of the settings for me?__
