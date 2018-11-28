@@ -72,6 +72,10 @@ CCTK\
 
 __Password list__  
 Added Using list item BIOSPasswords (eg. BIOSPasswords001, BIOSPasswords002, etc)
+called only when using argument:
+```
+cscript ZTIDellBIOSSettings.wsf /clearpassword
+```
 
 __New password__  
 Added using variable NewBIOSPassword
