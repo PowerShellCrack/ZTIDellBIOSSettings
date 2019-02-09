@@ -1,9 +1,30 @@
-ZTIDellBIOSSettings
-===================
+# ZTIDellBIOSSettings
+script for zero-touch Dell BIOS configuration.
 
-The go to, and only, script for zero-touch Dell BIOS configuration.
+## USAGE
+cscript.exe [//nologo] ZTIDellBIOSSettings.wsf [/debug:true] [/settings|/settings:"path\filename.cctk"] [/setpassword] [/clearpassword] [/cctkpath:"path to cctk folder"] 
 
-# What does ZTIDellBIOSSettings do?
+
+ - Customsettings.ini
+    Properties=CCTKPath,BIOSSettingsFile,NewBIOSPassword,BIOSPasswords(*),AssetTag
+
+    ' // CCTK SETTINGS ( used with ZTIDellBIOSSettings.wsf )
+    CCTKPath=%DeployRoot%\Scripts\Custom\OS-Configs\Tools\CCTK\4.1.0.0
+    'AssetTag=
+
+
+    '// New and known BIOS Passwords
+    NewBIOSPassword=[new password]
+    BIOSPasswords001=[current password]
+
+
+## Prerequisties
+ - Dell Command and Configure
+
+
+
+
+## What does ZTIDellBIOSSettings do?
 ZTIDellBIOSSettings is a vbs script that can be included in a MDT or SCCM environment. It does several things.
 
 First it sets up the CCTK (Client Configuration ToolKit) environment, initializes WMI, installs the HAPI driver, and checks all the files for existence.
